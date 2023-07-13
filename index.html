@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ecommerce</title>
+      <link
+         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./src/styles.css" />
+      <script src="./src/main.js" defer></script>
+   </head>
+   <body>
+      <header class="content__navbar">
+         <nav class="navbar">
+            <a href="#">Home</a>
+            <i class="bx bx-cart bx-tada-hover icon__cart">
+               <span class="ball"></span>
+            </i>
+         </nav>
+      </header>
+      <div class="container">
+         <div class="products"></div>
+      </div>
+      <div class="cart">
+         <div class="cart__products"></div>
+         <div class="cart__total">
+            <div class="cart__total__info">
+               <p>
+                  Units:
+                  <span id="totalProducts">0</span>
+               </p>
+               <p>
+                  Total: $
+                  <span id="totalPrice">0</span>
+               </p>
+            </div>
+            <button class="btn__buy">Comprar</button>
+         </div>
+      </div>
+   </body>
+</html>
