@@ -13,15 +13,81 @@
    </head>
    <body>
       <header class="content__navbar">
-         <nav class="navbar">
-            <a href="#">Home</a>
-            <i class="bx bx-cart bx-tada-hover icon__cart">
-               <span class="ball"></span>
-            </i>
+         <nav class="navbar container">
+            <a href="#home" class="navbar__logo">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48.92 56.48"
+                  class="nav__logo-icon"
+               >
+                  <title>Academlo Logo</title>
+                  <g>
+                     <g>
+                        <path
+                           d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+                        ></path>
+                     </g>
+                  </g>
+               </svg>
+               <span>STORE</span>
+            </a>
+            <ul class="navbar__menu" id="navbarMenu">
+               <li>
+                  <a href="#home">Home</a>
+               </li>
+               <li>
+                  <a href="#products">Products</a>
+               </li>
+            </ul>
+            <div class="navbar__icons">
+               <i class="bx bx-moon" id="iconTheme"></i>
+               <i class="bx bx-cart bx-tada-hover icon__cart">
+                  <span class="ball"></span>
+               </i>
+            </div>
          </nav>
       </header>
       <div class="container">
-         <div class="products"></div>
+         <section class="home" id="home">
+            <div class="home__header">
+               <div></div>
+               <div class="home__header__img">
+                  <img
+                     src="https://static.vecteezy.com/system/resources/previews/013/078/569/non_2x/illustration-of-cute-colored-cat-cartoon-cat-image-in-format-suitable-for-children-s-book-design-elements-introduction-of-cats-to-children-books-or-posters-about-animal-free-png.png"
+                     alt=""
+                  />
+               </div>
+               <div class="home__body">
+                  <h2 class="home__body__title">
+                     New Sweatshirt COLLECTIONS 2022
+                  </h2>
+                  <p class="home__body__p">
+                     Latest arrival of the new Hanes Midweight Crewneck
+                     sweatshirt imported from the 2022 series, with a modern
+                     design.
+                  </p>
+                  <p class="home__body__price">Insertar desde el js</p>
+                  <a href="#products" class="home__body__btn">Show more</a>
+               </div>
+            </div>
+         </section>
+         <section class="content__products" id="products">
+            <div class="content__filter">
+               <div class="filter filter__active">
+                  <p>Show all</p>
+               </div>
+               <div class="filter">
+                  <p>Shirt</p>
+               </div>
+               <div class="filter">
+                  <p>Hoddie</p>
+               </div>
+               <div class="filter">
+                  <p>Sweater</p>
+               </div>
+            </div>
+            <div class="products"></div>
+         </section>
       </div>
       <div class="cart">
          <div class="cart__products"></div>
@@ -39,5 +105,81 @@
             <button class="btn__buy">Comprar</button>
          </div>
       </div>
+      <footer>
+         <section class="content__footer container">
+            <div class="footer_info">
+               <h3 class="footer__info__title">Our information</h3>
+               <ul>
+                  <li>
+                     <a href="#">Toluca - México</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer_info">
+               <h3 class="footer__info__title">About Us</h3>
+               <ul>
+                  <li>
+                     <a href="#">Support Center</a>
+                  </li>
+                  <li>
+                     <a href="#">Customer Support</a>
+                  </li>
+                  <li>
+                     <a href="#">About Us</a>
+                  </li>
+                  <li>
+                     <a href="#">Copy Right</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer_info">
+               <h3 class="footer__info__title">Product</h3>
+               <ul>
+                  <li>
+                     <a href="#">Hoodies</a>
+                  </li>
+                  <li>
+                     <a href="#">Shirts</a>
+                  </li>
+                  <li>
+                     <a href="#">About Us</a>
+                  </li>
+                  <li>
+                     <a href="#">Sweatshirts</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer_info">
+               <h3 class="footer__info__title">Social</h3>
+               <ul class="footer__link-social">
+                  <li>
+                     <a href="#"><i class="bx bxl-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <i class="bx bxl-twitter"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <i class="bx bxl-instagram"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <p>
+            <b>Fabrizio Alexander Sebastian Pino Cayatopa</b>
+            <b>fabrizioxz1@gmail.com</b>
+            <a href="https://ecommercefabriziopgen28.netlify.app/">
+               El repositorio
+            </a>
+         </p>
+         <p>
+            <a href="https://ecommercebackend.fundamentos-29.repl.co/">
+               API consumida
+            </a>
+         </p>
+      </footer>
    </body>
 </html>

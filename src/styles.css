@@ -19,6 +19,13 @@ a {
    text-decoration: none;
    color: inherit;
 }
+li {
+   display: list-item;
+   text-align: -webkit-match-parent;
+}
+ul {
+   list-style: none;
+}
 .icon__cart {
    font-size: 2rem;
    cursor: pointer;
@@ -38,6 +45,7 @@ a {
    right: -0.5rem;
 }
 .content__navbar {
+   background-color: lightcoral;
    position: fixed;
    top: 0;
    left: 0;
@@ -45,21 +53,104 @@ a {
    color: #fff;
 }
 .navbar {
-   background-color: lightcoral;
    display: flex;
    align-items: center;
-   justify-content: space-between;
    padding: 0 1rem;
    height: var(--h-navbar);
    max-width: 1024px;
+   justify-content: space-between;
    margin: 0 auto;
+   gap: 2rem;
 }
-
+.navbar__logo {
+   display: flex;
+   align-items: center;
+}
+.nav__logo-icon {
+   width: 40px;
+   fill: red;
+}
+.nav_logo-icon + span {
+   font-weight: 500;
+   color: blue;
+}
+.navbar__menu {
+   display: flex;
+   align-items: center;
+   position: static;
+   height: auto;
+   flex-direction: row;
+   gap: 1rem;
+   width: 100%;
+   justify-content: flex-start;
+}
+.navbar__icons {
+   font-size: 1.3rem;
+   cursor: pointer;
+   user-select: none;
+   display: flex;
+   gap: 0.5rem;
+}
 .container {
    max-width: 1024px;
    margin: 0 auto;
    padding: 1rem;
    padding-top: 3rem;
+}
+.home {
+   display: flex;
+   flex-direction: row-reverse;
+   min-height: 80vh;
+   gap: 1rem;
+}
+.home__header {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.home__header div:nth-child(1) {
+   display: none;
+}
+.home__header__img {
+   background-color: red;
+   display: flex;
+   align-items: center;
+   min-height: 400px;
+}
+.home__body {
+   display: flex;
+   flex-direction: column;
+   padding: 0 2rem;
+   gap: 1rem;
+   font-size: 3rem;
+}
+.home__body__price {
+   color: red;
+   font-weight: 700;
+   font-size: 1.5rem;
+}
+.content__products {
+   padding: 5rem 1rem;
+   display: grid;
+   gap: 3rem;
+}
+.content__filter {
+   margin: auto;
+   max-width: 700px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1rem;
+   user-select: none;
+}
+.filter {
+   text-align: center;
+   cursor: pointer;
+   padding: 0.5rem;
+   transition: background-color 0.5s;
+   box-sizing: var(--shadow-general);
+}
+.filter__active {
+   background-color: #000;
+   color: #fff;
 }
 .products {
    display: grid;
@@ -114,4 +205,20 @@ a {
    width: 100%;
    display: flex;
    justify-content: space-around;
+}
+footer {
+   padding: 5rem 2rem;
+}
+.content__footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1.5rem;
+}
+footer > p {
+   margin-top: 3rem;
+   background-color: lightcoral;
+   color: #fff;
+   text-align: center;
+   padding: 1rem;
 }
