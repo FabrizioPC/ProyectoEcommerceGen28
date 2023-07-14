@@ -70,10 +70,7 @@ ul {
    width: 40px;
    fill: red;
 }
-.nav_logo-icon + span {
-   font-weight: 500;
-   color: blue;
-}
+
 .navbar__menu {
    display: flex;
    align-items: center;
@@ -127,13 +124,12 @@ ul {
 }
 .home__body__price {
    color: red;
-   font-weight: 700;
    font-size: 1.5rem;
 }
 .home__body__btn {
    background-color: #000;
    color: #fff;
-   font-weight: 500;
+
    letter-spacing: 1px;
    padding: 15px 30px;
    place-self: baseline;
@@ -166,6 +162,29 @@ ul {
    display: grid;
    gap: 1rem;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.product {
+   display: grid;
+   padding: 1rem;
+   border-radius: 10px;
+   border: 1px solid lightcoral;
+}
+.product__btn {
+   margin: 1rem auto;
+   background-color: lightgreen;
+   color: #000;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   padding: 0.5rem 2rem;
+}
+.product__soldout {
+   margin: 1rem auto;
+   background-color: rgb(253, 33, 33);
+   color: #fff;
+   border-radius: 10px;
+   border: none;
+   padding: 5px;
 }
 .cart {
    background-color: rgb(194, 102, 102);

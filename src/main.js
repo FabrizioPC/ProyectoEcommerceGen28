@@ -54,11 +54,16 @@ function printProducts(store) {
                <img src="${image}" alt=""/>
             </div>
             <h3>${name}</h3>
-            <p>$${price}.0 - ${quantity} unidades</p>
+            <p>$${price}.0 - ${
+         quantity === 0
+            ? `<b class="product__soldout">Sold out</b>`
+            : quantity + ` unidades`
+      }</p>
+            
             ${
                quantity
                   ? `<button class="product__btn" id="${id}">Agregar</button>`
-                  : `<div></div>`
+                  : `<div ></div>`
             }
          </div>
       `;
@@ -196,6 +201,10 @@ function handleTotal(store) {
       localStorage.setItem("cart", JSON.stringify(store.cart));
       printProducts(store);
       printProductsInCart(store);
+      printTotal(store);
+      setTimeout(function () {
+         location.reload();
+      }, 1000);
    });
 }
 async function main() {
