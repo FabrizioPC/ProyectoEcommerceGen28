@@ -17,6 +17,33 @@ function validateAmountProduct(store, id) {
       store.cart[id].amount++;
    }
 }
+function printHeader(store) {
+   let html = ``;
+
+   store.products.find(function (student) {
+      if (student.id === 14) {
+         html += `
+         <div class="home__header">
+            <div></div>
+            <div class="home__header__img">
+            <img src="${student.image}" alt="" /></div>
+         </div>
+         <div class="home__body">
+            <h2 class="home__body__title">
+            New Sweatshirt COLLECTIONS 2022
+            </h2>
+            <p class="home__body__p">
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+            imported from the 2022 series, with a modern design.
+            </p>
+            <p class="home__body__price">${student.price}</p>
+            <a href="#products" class="home__body__btn">Show more</a>
+         </div>`;
+      }
+   });
+   // <img src="${student.image}" alt="" />
+   document.querySelector(".home").innerHTML = html;
+}
 
 function printProducts(store) {
    let html = "";
@@ -177,6 +204,7 @@ async function main() {
          JSON.parse(localStorage.getItem("products")) || (await getProducts()),
       cart: JSON.parse(localStorage.getItem("cart")) || {},
    };
+   printHeader(store);
    printProducts(store);
    handleShowCart();
    addToCartFromProducts(store);

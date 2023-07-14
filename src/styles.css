@@ -105,23 +105,25 @@ ul {
 }
 .home__header {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
 }
-.home__header div:nth-child(1) {
-   display: none;
-}
+
 .home__header__img {
    background-color: red;
    display: flex;
    align-items: center;
    min-height: 400px;
+   min-width: 400px;
+}
+.home__header div:nth-child(1) {
+   display: none;
 }
 .home__body {
    display: flex;
    flex-direction: column;
    padding: 0 2rem;
    gap: 1rem;
-   font-size: 3rem;
+   font-size: 2rem;
 }
 .home__body__price {
    color: red;
@@ -210,12 +212,13 @@ footer {
    padding: 5rem 2rem;
 }
 .content__footer {
+   background-color: gray;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    gap: 1.5rem;
 }
-footer > p {
+footer p {
    margin-top: 3rem;
    background-color: lightcoral;
    color: #fff;
