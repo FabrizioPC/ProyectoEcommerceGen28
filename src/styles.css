@@ -152,7 +152,6 @@ ul {
    cursor: pointer;
    padding: 0.5rem;
    transition: background-color 0.5s;
-   box-sizing: var(--shadow-general);
 }
 .filter__active {
    background-color: #000;

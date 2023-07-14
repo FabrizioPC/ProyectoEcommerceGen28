@@ -214,19 +214,19 @@ function filterProducts(store) {
          buttons.forEach((elementWithFilter) => {
             elementWithFilter.classList.remove("filter__active");
          });
-         e.currentTarget.classList.add("filter__active");
-         const filter = e.currentTarget.id;
-         if (filter === "all") {
+         const filter = e.currentTarget;
+         if (filter.id === "all") {
             printProducts(store);
          } else {
             const newArrFilter = store.products.filter((product) => {
-               return product.category === filter;
+               return product.category === filter.id;
             });
             const newStore = {
                products: structuredClone(newArrFilter),
             };
             printProducts(newStore);
          }
+         filter.classList.add("filter__active");
       });
    });
 }
