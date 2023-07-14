@@ -36,7 +36,7 @@ function printHeader(store) {
             Latest arrival of the new Hanes Midweight Crewneck sweatshirt
             imported from the 2022 series, with a modern design.
             </p>
-            <p class="home__body__price">${student.price}</p>
+            <p class="home__body__price">$${student.price}.00</p>
             <a href="#products" class="home__body__btn">Show more</a>
          </div>`;
       }
